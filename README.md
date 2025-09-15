@@ -4,9 +4,7 @@
 
 **URL**: https://lovable.dev/projects/c86c28a5-8542-4fb2-a975-c67e611fd46d
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/c86c28a5-8542-4fb2-a975-c67e611fd46d) and start prompting.
-
-The project "EventX" is designed to be highly flexible and scalable, catering to a diverse range of event types and sizes. While we want to be able to handle anything, our initial focus for the MVP will be on a specific market to ensure we solve a core problem exceptionally well before expanding.
+The project **EventX** is designed to be highly flexible and scalable, catering to a diverse range of event types and sizes. While we want to be able to handle anything, our initial focus for the MVP will be on a specific market to ensure we solve a core problem exceptionally well before expanding.
 
 Primary Target Audience for MVP:
 
