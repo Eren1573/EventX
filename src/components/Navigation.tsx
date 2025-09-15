@@ -9,7 +9,7 @@ const Navigation = () => {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-nav/80 backdrop-blur-lg border-b border-border">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-nav backdrop-blur-lg border-b border-border">
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -57,7 +57,7 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden absolute top-16 left-0 right-0 bg-nav/95 backdrop-blur-lg border-b border-border">
+          <div className="md:hidden absolute top-16 left-0 right-0 bg-nav backdrop-blur-lg border-b border-border">
             <div className="px-6 py-4 space-y-4">
               <a 
                 href="#features" 
