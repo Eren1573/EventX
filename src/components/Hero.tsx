@@ -36,28 +36,28 @@ const Hero = () => {
               Start Your Journey
               <ArrowRight className="w-5 h-5" />
             </Button>
-            <Button variant="outline" size="lg" className="text-lg px-8 py-4 border-white/30 text-white hover:bg-white/10">
+            <Button variant="outline" size="lg" className="text-lg px-8 py-4 border-white/30 text-white hover:bg-white/10 bg-card-muted/20">
               Watch Demo
             </Button>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
-            <div className="bg-gradient-card backdrop-blur-sm rounded-xl p-6 shadow-card hover:shadow-glow transition-smooth">
+            <div className="bg-card-muted/90 backdrop-blur-sm rounded-xl p-6 shadow-card hover:shadow-glow transition-smooth">
               <Users className="w-12 h-12 text-primary-glow mx-auto mb-4" />
-              <h3 className="text-xl font-semibold mb-2">For Organizers</h3>
-              <p className="text-gray-300">Powerful tools for seamless event management with AI-driven insights</p>
+              <h3 className="text-xl font-semibold mb-2 text-foreground">For Organizers</h3>
+              <p className="text-muted-foreground">Powerful tools for seamless event management with AI-driven insights</p>
             </div>
             
-            <div className="bg-gradient-card backdrop-blur-sm rounded-xl p-6 shadow-card hover:shadow-glow transition-smooth">
+            <div className="bg-card-muted/90 backdrop-blur-sm rounded-xl p-6 shadow-card hover:shadow-glow transition-smooth">
               <Zap className="w-12 h-12 text-primary-glow mx-auto mb-4" />
-              <h3 className="text-xl font-semibold mb-2">For Participants</h3>
-              <p className="text-gray-300">Intelligent matching and immersive experiences tailored to your interests</p>
+              <h3 className="text-xl font-semibold mb-2 text-foreground">For Participants</h3>
+              <p className="text-muted-foreground">Intelligent matching and immersive experiences tailored to your interests</p>
             </div>
             
-            <div className="bg-gradient-card backdrop-blur-sm rounded-xl p-6 shadow-card hover:shadow-glow transition-smooth">
+            <div className="bg-card-muted/90 backdrop-blur-sm rounded-xl p-6 shadow-card hover:shadow-glow transition-smooth">
               <Sparkles className="w-12 h-12 text-primary-glow mx-auto mb-4" />
-              <h3 className="text-xl font-semibold mb-2">For Sponsors</h3>
-              <p className="text-gray-300">Data-driven sponsorship opportunities with maximum ROI and engagement</p>
+              <h3 className="text-xl font-semibold mb-2 text-foreground">For Sponsors</h3>
+              <p className="text-muted-foreground">Data-driven sponsorship opportunities with maximum ROI and engagement</p>
             </div>
           </div>
         </div>

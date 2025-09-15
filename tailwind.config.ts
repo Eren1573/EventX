@@ -59,6 +59,10 @@ export default {
           ring: "hsl(var(--sidebar-ring))",
         },
       },
+      backgroundColor: {
+        'nav': 'hsl(var(--nav-background))',
+        'card-muted': 'hsl(var(--card-muted))',
+      },
       backgroundImage: {
         'gradient-primary': 'var(--gradient-primary)',
         'gradient-hero': 'var(--gradient-hero)',
