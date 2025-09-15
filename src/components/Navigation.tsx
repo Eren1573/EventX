@@ -2,38 +2,48 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import eventXLogo from "@/assets/event-x-logo.png";
+import { Link, useLocation } from "react-router-dom";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+
+  const isActive = (path: string) => location.pathname === path;
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-nav backdrop-blur-lg border-b border-border">
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center gap-3">
+          <Link to="/" className="flex items-center gap-3">
             <img src={eventXLogo} alt="Event X Logo" className="w-10 h-10" />
             <span className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">
               EVENT X
             </span>
-          </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#features" className="text-foreground hover:text-primary transition-smooth">
-              Features
-            </a>
-            <a href="#pricing" className="text-foreground hover:text-primary transition-smooth">
-              Pricing
-            </a>
-            <a href="#about" className="text-foreground hover:text-primary transition-smooth">
+            <Link 
+              to="/about" 
+              className={`transition-smooth ${isActive('/about') ? 'text-primary' : 'text-foreground hover:text-primary'}`}
+            >
               About
-            </a>
-            <a href="#contact" className="text-foreground hover:text-primary transition-smooth">
+            </Link>
+            <Link 
+              to="/pricing" 
+              className={`transition-smooth ${isActive('/pricing') ? 'text-primary' : 'text-foreground hover:text-primary'}`}
+            >
+              Pricing
+            </Link>
+            <Link 
+              to="/contact" 
+              className={`transition-smooth ${isActive('/contact') ? 'text-primary' : 'text-foreground hover:text-primary'}`}
+            >
               Contact
-            </a>
+            </Link>
           </div>
 
           {/* Desktop CTA */}
@@ -59,34 +69,27 @@ const Navigation = () => {
         {isMenuOpen && (
           <div className="md:hidden absolute top-16 left-0 right-0 bg-nav backdrop-blur-lg border-b border-border">
             <div className="px-6 py-4 space-y-4">
-              <a 
-                href="#features" 
-                className="block text-foreground hover:text-primary transition-smooth"
-                onClick={toggleMenu}
-              >
-                Features
-              </a>
-              <a 
-                href="#pricing" 
-                className="block text-foreground hover:text-primary transition-smooth"
-                onClick={toggleMenu}
-              >
-                Pricing
-              </a>
-              <a 
-                href="#about" 
-                className="block text-foreground hover:text-primary transition-smooth"
+              <Link 
+                to="/about" 
+                className={`block transition-smooth ${isActive('/about') ? 'text-primary' : 'text-foreground hover:text-primary'}`}
                 onClick={toggleMenu}
               >
                 About
-              </a>
-              <a 
-                href="#contact" 
-                className="block text-foreground hover:text-primary transition-smooth"
+              </Link>
+              <Link 
+                to="/pricing" 
+                className={`block transition-smooth ${isActive('/pricing') ? 'text-primary' : 'text-foreground hover:text-primary'}`}
+                onClick={toggleMenu}
+              >
+                Pricing
+              </Link>
+              <Link 
+                to="/contact" 
+                className={`block transition-smooth ${isActive('/contact') ? 'text-primary' : 'text-foreground hover:text-primary'}`}
                 onClick={toggleMenu}
               >
                 Contact
-              </a>
+              </Link>
               <div className="pt-4 space-y-2">
                 <Button variant="ghost" className="w-full">
                   Sign In
