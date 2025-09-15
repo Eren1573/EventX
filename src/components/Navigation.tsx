@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { Menu, X, Sparkles } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import eventXLogo from "@/assets/event-x-logo.png";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,8 +13,8 @@ const Navigation = () => {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center gap-2">
-            <Sparkles className="w-8 h-8 text-primary" />
+          <div className="flex items-center gap-3">
+            <img src={eventXLogo} alt="Event X Logo" className="w-10 h-10" />
             <span className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">
               EVENT X
             </span>
