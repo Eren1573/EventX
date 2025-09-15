@@ -1,70 +1,52 @@
-# Welcome to your Lovable project
+# Welcome to your My project Event X
 
 ## Project info
 
 **URL**: https://lovable.dev/projects/c86c28a5-8542-4fb2-a975-c67e611fd46d
 
-## How can I edit this code?
-
-There are several ways of editing your application.
-
-**Use Lovable**
-
 Simply visit the [Lovable Project](https://lovable.dev/projects/c86c28a5-8542-4fb2-a975-c67e611fd46d) and start prompting.
 
-Changes made via Lovable will be committed automatically to this repo.
+The project "EventX" is designed to be highly flexible and scalable, catering to a diverse range of event types and sizes. While we want to be able to handle anything, our initial focus for the MVP will be on a specific market to ensure we solve a core problem exceptionally well before expanding.
 
-**Use your preferred IDE**
+Primary Target Audience for MVP:
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Organizers: Hackathon organizers, primarily at the university and corporate level. This group is tech-savvy, values seamless collaboration, and is acutely aware of the shortcomings of existing platforms. They need powerful, intuitive tools for managing participants, submissions, and judging.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Participants: University students and young professionals. They are highly motivated by opportunities to build a portfolio, learn new skills, and network. They are accustomed to digital-first experiences and will expect a clean, fast, and highly engaging user interface.
 
-Follow these steps:
+Sponsors: Tech companies and startups. Their primary goal is talent acquisition and brand promotion. They need a platform that provides a direct, measurable return on investment, with features for lead generation, targeted engagement, and robust analytics.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Future Expansion: Once the MVP is established, we can broaden the scope to include:
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Large corporate conferences and industry summits.
 
-# Step 3: Install the necessary dependencies.
-npm i
+Creative "ideathons" and design challenges.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+Hybrid events with both physical and virtual components.
 
-**Edit a file directly in GitHub**
+Educational workshops and professional development series.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+2. Core Problem with Existing Solutions (Unstop, Devfolio, etc.)
+Based on the project description, the key frustrations with current platforms like Unstop and Devfolio that "EventX" aims to solve are:
 
-**Use GitHub Codespaces**
+Fragmentation and Manual Workflows: Organizers often have to use multiple tools for different parts of an event (e.g., one platform for registration, a different one for team formation, and another for communication). This leads to a clunky user experience, data silos, and a significant administrative burden. EventX will be an all-in-one platform.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Lack of Intelligent Matching and Personalization: Current platforms offer limited to no intelligent matchmaking for participants. Participants are often left to find teams manually, which can be a major barrier to entry and a source of frustration. Sponsors also lack sophisticated tools for identifying and engaging with the most relevant talent. EventX will leverage AI for this.
 
-## What technologies are used for this project?
+Static, Un-engaging Virtual Experiences: Virtual events on existing platforms often feel like glorified video calls with limited interactivity. They fail to replicate the dynamism and networking opportunities of in-person events. EventX will use VR/AR to create truly immersive environments.
 
-This project is built with:
+Poor Analytics and ROI Measurement: Sponsors and organizers struggle to get deep, actionable insights into attendee behavior, engagement levels, and the true ROI of their involvement. They often rely on manual data collection and guesswork. EventX will provide robust, real-time analytics.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Limited Customization and Branding: Organizers have a hard time creating a unique, branded experience that truly reflects their event's identity. Platforms can feel generic and restrictive. EventX will offer powerful customization tools.
 
-## How can I deploy this project?
+3. Initial MVP Focus
+Given the ambitious feature set, a successful MVP for EventX will need to focus on the core user journey and the most significant differentiators.
 
-Simply open [Lovable](https://lovable.dev/projects/c86c28a5-8542-4fb2-a975-c67e611fd46d) and click on Share -> Publish.
+Must-Have Features for MVP (Hackathon-centric):
 
-## Can I connect a custom domain to my Lovable project?
+Core Event Management: A unified dashboard for organizers to manage the event timeline, set up challenges, and oversee participant registration and submissions.
+
+AI-Powered Team Matching: A key differentiator. This feature will use participant profiles (skills, interests, project ideas) to intelligently recommend potential teammates.
 
 Yes, you can!
 
