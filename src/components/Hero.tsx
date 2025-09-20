@@ -32,9 +32,17 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <Button variant="hero" size="lg" className="text-lg px-8 py-4">
-              Start Your Journey
-              <ArrowRight className="w-5 h-5" />
+            <Button 
+              variant="hero" 
+              size="lg" 
+              className="text-lg px-8 py-4 relative overflow-hidden group animate-pulse hover:animate-none"
+              onClick={() => window.location.href = '/events'}
+            >
+              <span className="relative z-10">Start Your Journey</span>
+              <ArrowRight className="w-5 h-5 relative z-10" />
+              {/* Shining effect */}
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-primary-glow/50 to-accent/50 opacity-20 group-hover:opacity-40 transition-opacity duration-300"></div>
             </Button>
             <Button variant="outline" size="lg" className="text-lg px-8 py-4 border-white/30 text-white hover:bg-white/10 bg-card-muted/20">
               Watch Demo
