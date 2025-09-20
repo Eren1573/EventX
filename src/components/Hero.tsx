@@ -35,14 +35,14 @@ const Hero = () => {
             <Button 
               variant="hero" 
               size="lg" 
-              className="text-lg px-8 py-4 relative overflow-hidden group animate-pulse hover:animate-none"
+              className="text-lg px-8 py-4 relative overflow-hidden group bg-gradient-to-r from-yellow-400 via-orange-400 to-pink-400 hover:from-yellow-500 hover:via-orange-500 hover:to-pink-500 border-0 shadow-2xl"
               onClick={() => window.location.href = '/events'}
             >
-              <span className="relative z-10">Start Your Journey</span>
-              <ArrowRight className="w-5 h-5 relative z-10" />
-              {/* Shining effect */}
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out"></div>
-              <div className="absolute inset-0 bg-gradient-to-r from-primary-glow/50 to-accent/50 opacity-20 group-hover:opacity-40 transition-opacity duration-300"></div>
+              <span className="relative z-10 font-bold">Start an Event</span>
+              <ArrowRight className="w-5 h-5 relative z-10 ml-2" />
+              {/* Static shining effect */}
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent skew-x-12 animate-shine"></div>
+              <div className="absolute inset-0 bg-white/10 rounded-lg"></div>
             </Button>
             <Button variant="outline" size="lg" className="text-lg px-8 py-4 border-white/30 text-white hover:bg-white/10 bg-card-muted/20">
               Watch Demo

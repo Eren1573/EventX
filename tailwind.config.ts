@@ -105,11 +105,16 @@ export default {
           "25%": { transform: "rotate(0.5deg)" },
           "75%": { transform: "rotate(-0.5deg)" },
         },
+        "shine": {
+          "0%": { transform: "translateX(-100%) skewX(-12deg)" },
+          "100%": { transform: "translateX(200%) skewX(-12deg)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "tilt": "tilt 10s infinite linear",
+        "shine": "shine 2s infinite linear",
       },
     },
   },
