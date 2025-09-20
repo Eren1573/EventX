@@ -2,7 +2,7 @@
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/c86c28a5-8542-4fb2-a975-c67e611fd46d
+**URL**: [https://event-x-one.vercel.app](https://event-x-one.vercel.app/)
 
 The project **EventX** is designed to be highly flexible and scalable, catering to a diverse range of event types and sizes. While we want to be able to handle anything, our initial focus for the MVP will be on a specific market to ensure we solve a core problem exceptionally well before expanding.
 
@@ -40,14 +40,6 @@ Limited Customization and Branding: Organizers have a hard time creating a uniqu
 3. Initial MVP Focus
 Given the ambitious feature set, a successful MVP for EventX will need to focus on the core user journey and the most significant differentiators.
 
-Must-Have Features for MVP (Hackathon-centric):
+Must-Have Features for MVP:
 
 Core Event Management: A unified dashboard for organizers to manage the event timeline, set up challenges, and oversee participant registration and submissions.
-
-AI-Powered Team Matching: A key differentiator. This feature will use participant profiles (skills, interests, project ideas) to intelligently recommend potential teammates.
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
